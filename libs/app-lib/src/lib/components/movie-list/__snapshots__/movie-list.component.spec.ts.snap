@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieListComponent Storybook stories snapshot tests Story isError 1`] = `
+<app-movie-list
+  errorMessage={[Function String]}
+  isLoading="false"
+  onMovieClick={[Function Function]}
+  onPageChange={[Function Function]}
+  onReloadList={[Function Function]}
+>
+  <div
+    class="c-movie-list x-load-error"
+  >
+    <ngb-toast
+      class="bg-danger text-light"
+    >
+       Error: Cannot load the movie list from the server!
+      <br />
+      <a
+        href="#"
+      >
+        Click here to retry.
+      </a>
+    </ngb-toast>
+  </div>
+</app-movie-list>
+`;
+
+exports[`MovieListComponent Storybook stories snapshot tests Story isLoaded 1`] = `
+<app-movie-list
+  errorMessage=""
+  isLoading="false"
+  movieList={[Function Array]}
+  onMovieClick={[Function Function]}
+  onPageChange={[Function Function]}
+  onReloadList={[Function Function]}
+  page={[Function Number]}
+  pageSize={[Function Number]}
+  paginationCollectionSize={[Function Number]}
+>
+  <div
+    class="c-movie-list x-no-load-error"
+  >
+    <ul
+      data-qa="movie-list-ul"
+    >
+      
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Project Power (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Tenet (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Sputnik (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    
+    <ngb-pagination />
+  </div>
+</app-movie-list>
+`;
+
+exports[`MovieListComponent Storybook stories snapshot tests Story isLoadedWithSelectedMovie 1`] = `
+<app-movie-list
+  errorMessage=""
+  isLoading="false"
+  movieList={[Function Array]}
+  onMovieClick={[Function Function]}
+  onPageChange={[Function Function]}
+  onReloadList={[Function Function]}
+  page={[Function Number]}
+  pageSize={[Function Number]}
+  paginationCollectionSize={[Function Number]}
+  selectedMovie={[Function Object]}
+>
+  <div
+    class="c-movie-list x-no-load-error"
+  >
+    <ul
+      data-qa="movie-list-ul"
+    >
+      
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Project Power (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          class="x-selected"
+          href="#"
+        >
+          <span>
+            Tenet (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Sputnik (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    
+    <ngb-pagination />
+  </div>
+</app-movie-list>
+`;
+
+exports[`MovieListComponent Storybook stories snapshot tests Story isLoading 1`] = `
+<app-movie-list
+  errorMessage=""
+  isLoading={[Function Boolean]}
+  movieList={[Function Array]}
+  onMovieClick={[Function Function]}
+  onPageChange={[Function Function]}
+  onReloadList={[Function Function]}
+  page={[Function Number]}
+  pageSize={[Function Number]}
+  paginationCollectionSize={[Function Number]}
+>
+  <div
+    class="c-movie-list x-no-load-error"
+  >
+    <ul
+      class="x-is-loading"
+      data-qa="movie-list-ul"
+    >
+      
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Project Power (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Tenet (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#"
+        >
+          <span>
+            Sputnik (2020)
+          </span>
+          <svg
+            class="bi bi-caret-right-fill"
+            fill="currentColor"
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+            />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    
+    <ngb-pagination />
+  </div>
+</app-movie-list>
+`;

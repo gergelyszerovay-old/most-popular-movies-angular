@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetailedInformationComponent Storybook stories snapshot tests Story movieWithPoster 1`] = `
+<app-movie-detailed-information
+  baseUrlPoster={[Function String]}
+  movie={[Function Object]}
+  onCloseClick={[Function Function]}
+>
+  <ngb-alert
+    class="c-detailed-info x-no-movie-selected"
+    type="light"
+  >
+     Select a movie from the list to view its details! 
+  </ngb-alert>
+</app-movie-detailed-information>
+`;
+
+exports[`MovieDetailedInformationComponent Storybook stories snapshot tests Story movieWithoutPoster 1`] = `
+<app-movie-detailed-information
+  baseUrlPoster={[Function String]}
+  movie={[Function Object]}
+  onCloseClick={[Function Function]}
+>
+  <ngb-alert
+    class="c-detailed-info x-no-movie-selected"
+    type="light"
+  >
+     Select a movie from the list to view its details! 
+  </ngb-alert>
+</app-movie-detailed-information>
+`;
+
+exports[`MovieDetailedInformationComponent Storybook stories snapshot tests Story noMovieSelected 1`] = `
+<app-movie-detailed-information
+  baseUrlPoster={[Function String]}
+  movie="null"
+  onCloseClick={[Function Function]}
+>
+  <ngb-alert
+    class="c-detailed-info x-no-movie-selected"
+    type="light"
+  >
+     Select a movie from the list to view its details! 
+  </ngb-alert>
+</app-movie-detailed-information>
+`;

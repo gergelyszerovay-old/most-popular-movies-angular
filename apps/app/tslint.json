@@ -1,0 +1,22 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "mostPopularMoviesAngular",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "most-popular-movies-angular",
+      "kebab-case"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "!**/*"
+    ]
+  }
+}

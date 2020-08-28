@@ -1,0 +1,29 @@
+<div *ngIf="movie; then isMovieSelected else noMovieSelected"></div>
+<ng-template #isMovieSelected>
+  <div class="c-detailed-info x-movie-selected">
+    <button (click)="onCloseClick.emit()" aria-label="Close" class="close" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <h3>{{movie.title}} ({{movie?.release_date | getYearFromISODate}})</h3>
+
+    <ul class="c-detailed-info--genres">
+      <li *ngFor="let genre of movie._genres; trackBy: trackByFnGenreList ">
+        <span class="badge badge-secondary">{{genre.name}}</span>
+      </li>
+    </ul>
+    <div class="c-detailed-info--rating">
+      Rating:
+      <ngb-rating [rate]="movie.vote_average" [readonly]="true"></ngb-rating>
+      {{movie.vote_average | numberToFixed:1}}
+    </div>
+    <div class="row c-detailed-info--poster-overview">
+      <img *ngIf="!!movie.poster_path" [src]="baseUrlPoster + movie.poster_path" class="col-md-4"/>
+      <p class="col-md-8">{{movie.overview}}</p>
+    </div>
+  </div>
+</ng-template>
+<ng-template #noMovieSelected>
+  <ngb-alert [dismissible]="false" class="c-detailed-info x-no-movie-selected" type="light">
+    Select a movie from the list to view its details!
+  </ngb-alert>
+</ng-template>

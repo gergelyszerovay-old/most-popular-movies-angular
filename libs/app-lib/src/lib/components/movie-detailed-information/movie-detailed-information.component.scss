@@ -1,0 +1,72 @@
+$componentClass: '.c-detailed-info';
+
+#{$componentClass} {
+  &.x-movie-selected {
+    padding: 1rem;
+    background-color: white;
+
+    h3 {
+      padding-right: 2rem;
+    }
+
+    .close {
+      display: none;
+    }
+
+    #{$componentClass} {
+      &--genres {
+        margin: 0;
+        padding: 0 0 1rem;
+        display: block;
+
+        li {
+          list-style-type: none;
+          display: inline;
+          margin-right: 0.5rem;
+        }
+      }
+
+      &--rating {
+        margin-bottom: 1rem;
+        font-weight: bold;
+
+        ngb-rating {
+          display: inline;
+          color: darkgoldenrod;
+        }
+      }
+    }
+  }
+
+  &.x-no-movie-selected {
+    margin: 1rem;
+  }
+
+}
+
+@media (max-width: 767px) {
+  #{$componentClass} {
+    &.x-no-movie-selected {
+      display: none;
+    }
+
+    &.x-movie-selected {
+      padding: 1rem;
+      background-color: white;
+
+      .close {
+        display: block;
+      }
+
+      #{$componentClass} {
+        &--poster-overview {
+          img {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+

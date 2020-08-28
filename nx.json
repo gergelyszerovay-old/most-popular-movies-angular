@@ -1,0 +1,50 @@
+{
+  "npmScope": "most-popular-movies-angular",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "app": {
+      "tags": []
+    },
+    "app-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "app"
+      ]
+    },
+    "app-lib": {
+      "tags": []
+    },
+    "app-lib-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "app-lib"
+      ]
+    }
+  }
+}

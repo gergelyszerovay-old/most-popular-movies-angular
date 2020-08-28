@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainLayoutComponent should the snapshot match 1`] = `
+<app-main-layout
+  baseUrlPoster={[Function String]}
+  isDetailsVisibleOnMobile="false"
+  movieGenresErrorMessage$={[Function Store]}
+  movieGenresFacade={[Function MovieGenresFacade]}
+  movieGenresLoading$={[Function Store]}
+  movieList$={[Function Store]}
+  movieListErrorMessage$={[Function Store]}
+  movieListFacade={[Function MovieListFacade]}
+  movieListLoading$={[Function Store]}
+  pageSize={[Function Number]}
+  paginationCollectionSize$={[Function Store]}
+  paginationSelectedPage$={[Function Store]}
+  selectedMovie$={[Function Store]}
+>
+  <div
+    class="container-fluid c-main-layout x-container"
+  >
+    <div
+      class="c-main-layout--header"
+    >
+      <h4>
+        Most popular movies
+      </h4>
+    </div>
+    <div
+      class="c-main-layout--content"
+    >
+      <div
+        class="row h-100 c-main-layout--content-row"
+      >
+        <app-movie-list
+          class="col-md-4 h-100"
+        />
+        <app-movie-detailed-information
+          class="col-md-8 h-100"
+        />
+      </div>
+    </div>
+  </div>
+</app-main-layout>
+`;
