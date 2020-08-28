@@ -60,6 +60,3 @@ export const movieListReducer = createReducer(
   }))
 );
 
-// export function movieListReducer(state: MovieListState | undefined, action: Action) {
-//   return _movieListReducer(state, action);
-// }

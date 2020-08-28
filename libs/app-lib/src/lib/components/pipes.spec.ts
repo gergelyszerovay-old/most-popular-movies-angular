@@ -1,6 +1,5 @@
 import {GetYearFromISODatePipe, NumberToFixedPipe} from "./pipes";
 
-// expect(new GetYearFromISODatePipe().transform(0.02)).toEqual('2.00%');
 describe('Pipe tests', () => {
   it('GetYearFromISODatePipe should work', () => {
     expect(new GetYearFromISODatePipe().transform('2020-03-23')).toEqual('2020');

@@ -3,11 +3,6 @@ import {MOVIELIST_FEATURE_KEY, movieListAdapter, MovieListState,} from './movie-
 import {getMovieGenresEntities} from "../movie-genres/movie-genres.selectors";
 import {getAppLibState} from "../app-lib.reducer";
 
-// Lookup the 'MovieList' feature state managed by NgRx
-// const getMovieListState = createFeatureSelector<
-//   AppLibState,
-//   MovieListState
-// >(MOVIELIST_FEATURE_KEY);
 
 const getMovieListState = createSelector(
   getAppLibState,

@@ -9,7 +9,6 @@ export const MOVIEGENRES_FEATURE_KEY = 'movieGenres';
 export interface MovieGenresState extends EntityState<MovieGenresEntity> {
   loading: boolean;
   errorMessage?: string | null; // last known error (if any)
-  // movieGenres: { [id: number]: string }
 }
 
 export interface MovieGenresPartialState {
@@ -22,7 +21,6 @@ export const movieGenresInitialState: MovieGenresState = movieGenresAdapter.getI
   // set initial required properties
   loading: false,
   errorMessage: null,
-  // movieGenres: {}
 });
 
 export const movieGenresReducer = createReducer(
@@ -35,7 +33,6 @@ export const movieGenresReducer = createReducer(
   on(MovieGenresActions.loadMovieGenresSuccess, (state: MovieGenresState, {movieGenres}) =>
     movieGenresAdapter.setAll(movieGenres, {
         ...state,
-        // movieGenres: movieGenres.reduce((ret, item) => { ret[item.id] = item.name; return ret; }, {}),
         errorMessage: null,
         loading: false
       }
@@ -46,7 +43,3 @@ export const movieGenresReducer = createReducer(
     loading: false
   }))
 );
-
-// export function movieGenresReducer(state: MovieGenresState | undefined, action: Action) {
-//   return _movieGenresReducer(state, action);
-// }
