@@ -7,16 +7,21 @@ I tried to cover most of the code with unit tests. I used Storybook and snapshot
 
 ## Quickstart
 
-## You can use npm or docker-compose.
+You can use npm or docker-compose.
+
 ### Installation and configuration
 
 `git clone https://github.com/gergelyszerovay/most-popular-movies-angular.git`
 
 `cd most-popular-movies-angular`
 
-Copy the `apps/app/environments/environments.ts.sample` file to `apps/app/environments/environments.ts` and set `tmdbApiKey` to your TMDb API key.
+Copy the `apps/app/src/environments/environment.ts.sample` 
 
-If you leave the `tmdbApiKey` empty, the application fetches the data from a mock service.
+file to 
+
+`apps/app/src/environments/environment.ts` 
+
+and set `tmdbApiKey` to your TMDb API key. If you leave the `tmdbApiKey` empty, the application fetches the data from a mock service.
 
 To install the required packages, enter:
 
