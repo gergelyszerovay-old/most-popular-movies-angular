@@ -100,7 +100,7 @@ You can run the unit test with:
 ## Possible future enhancements
 
 * Search functionality:
-    * Implementing a text-based search functionality using the https://developers.themoviedb.org/3/search/search-keywords API endpoint with an additional entity store
+    * Implementing a text-based search functionality using the https://developers.themoviedb.org/3/search/search-keywords API endpoint
     * e2e integration tests 
 
 ---
